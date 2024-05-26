@@ -1,13 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #ab5034;
+    color: #ffffff;
     padding: 1rem 0;
     text-align: center;
 }
@@ -25,14 +27,19 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #e9c3b7;
 }
 
 #hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #ffffff;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -41,9 +48,18 @@ header nav ul li a {
 }
 
 #hero .hero-content {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(171, 80, 52, 0.8);
     padding: 2rem;
     border-radius: 10px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5rem;
 }
 
 section {
@@ -54,6 +70,13 @@ section {
 section h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
+    color: #ab5034;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
     color: #333;
 }
 
@@ -65,6 +88,25 @@ section h2 {
 #services ul li {
     margin: 0.5rem 0;
     font-size: 1.2rem;
+    color: #cd8973;
+}
+
+#instagram .instagram-feed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#instagram .instagram-feed div {
+    width: 200px;
+    height: 200px;
+    margin: 0.5rem;
+    background-color: #e9c3b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ab5034;
+    font-size: 1.2rem;
 }
 
 #contact form {
@@ -75,6 +117,8 @@ section h2 {
 
 #contact form label {
     margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
 }
 
 #contact form input, #contact form textarea {
@@ -82,26 +126,36 @@ section h2 {
     max-width: 500px;
     padding: 0.5rem;
     margin: 0.5rem 0;
-    border: 1px solid #ccc;
+    border: 1px solid #cd8973;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 #contact form button {
     padding: 0.5rem 2rem;
-    background-color: #333;
-    color: #fff;
+    background-color: #ab5034;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#contact form button:hover {
+    background-color: #cd8973;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #ab5034;
+    color: #ffffff;
     text-align: center;
     padding: 1rem 0;
 }
 
 footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
     margin: 0.5rem 0;
 }
